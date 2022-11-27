@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/expressionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:gravity="end"
+        android:padding="10dp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="end"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clearButton"
+            style="@style/operations_buttons"
+            android:text="C"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/openParenthesesButton"
+            style="@style/operations_buttons"
+            android:text="("
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/closeParenthesesButton"
+            style="@style/operations_buttons"
+            android:text=")"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/divisionButton"
+            style="@style/operations_buttons"
+            android:text="/"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberSevenButton"
+            style="@style/numbers_buttons"
+            android:text="7"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberEightButton"
+            style="@style/numbers_buttons"
+            android:text="8"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberNineButton"
+            style="@style/numbers_buttons"
+            android:text="9"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/multiplyButton"
+            style="@style/operations_buttons"
+            android:text="X"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberFourButton"
+            style="@style/numbers_buttons"
+            android:text="4"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberFiveButton"
+            style="@style/numbers_buttons"
+            android:text="5"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberSixButton"
+            style="@style/numbers_buttons"
+            android:text="6"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/subButton"
+            style="@style/operations_buttons"
+            android:text="-"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberOneButton"
+            style="@style/numbers_buttons"
+            android:text="1"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberTwoButton"
+            style="@style/numbers_buttons"
+            android:text="2"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberThreeButton"
+            style="@style/numbers_buttons"
+            android:text="3"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/plusButton"
+            style="@style/operations_buttons"
+            android:text="+"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dotButton"
+            style="@style/numbers_buttons"
+            android:text="." />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numberZeroButton"
+            style="@style/numbers_buttons"
+            android:text="0" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backSpaceImageView"
+            style="@style/numbers_buttons"
+            android:scaleType="center"
+            android:src="@drawable/backspace" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/equalButton"
+            style="@style/operations_buttons"
+            android:text="=" />
+    </LinearLayout>
+
+</LinearLayout>
